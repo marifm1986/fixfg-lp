@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({
               </button>
             </form>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button onClick={() => openModal()} className="theme-text bg-dark text-white px-6 py-3 rounded-md hover:theme-surface-dark transition flex-1">
+              <button onClick={() => openModal()} className="bg-dark text-white px-6 py-3 rounded-md hover:theme-surface-dark transition flex-1">
                 Book Free Consultation
               </button>
               <a href="tel:8554475155" className="bg-white border theme-border theme-text px-6 py-3 rounded-md hover:bg-gray-50 transition flex items-center justify-center flex-1">

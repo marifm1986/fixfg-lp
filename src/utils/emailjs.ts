@@ -1,4 +1,8 @@
 import emailjs from 'emailjs-com';
+
+const VITE_EMAILJS_SERVICE_ID = "service_v3f9tvn"
+const VITE_EMAILJS_TEMPLATE_ID = "template_1pw9ooj"
+const VITE_EMAILJS_PUBLIC_KEY = "yyrpXQUXxpkvAGyp9"
 interface EmailParams {
   fromName: string;
   userEmail: string;
@@ -7,9 +11,10 @@ interface EmailParams {
   caseSummary: string;
 }
 export const sendEmail = async (params: EmailParams) => {
-  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'placeholder_service';
-  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'placeholder_template';
-  const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'placeholder_key';
+
+  const serviceId = VITE_EMAILJS_SERVICE_ID;
+  const templateId = VITE_EMAILJS_TEMPLATE_ID;
+  const userId = VITE_EMAILJS_PUBLIC_KEY;
   const templateParams = {
     from_name: params.fromName,
     user_email: params.userEmail,
