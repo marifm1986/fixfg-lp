@@ -32,7 +32,7 @@ export function App() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-  return <div className="flex flex-col min-h-screen bg-[#F6F8FB] text-[#0F1C2E]">
+  return <div className="flex flex-col min-h-screen theme-bg theme-text">
       <Header openModal={openModal} />
       <main className="flex-grow">
         <Hero openModal={openModal} />

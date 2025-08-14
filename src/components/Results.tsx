@@ -2,15 +2,15 @@ import React from 'react';
 import { Package, Clock, Star } from 'lucide-react';
 export const Results = () => {
   const metrics = [{
-    icon: <Package size={24} className="text-[#00A389]" />,
+  icon: <Package size={24} className="theme-primary-text" />,
     value: '1,000+',
     label: 'Loads Restored'
   }, {
-    icon: <Clock size={24} className="text-[#00A389]" />,
+  icon: <Clock size={24} className="theme-primary-text" />,
     value: '14 Days',
     label: 'Avg. Resolution Window'
   }, {
-    icon: <Star size={24} className="text-[#00A389]" />,
+  icon: <Star size={24} className="theme-primary-text" />,
     value: '98%',
     label: 'Client Satisfaction'
   }];
@@ -27,31 +27,31 @@ export const Results = () => {
   }];
   return <section id="results" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#0F1C2E]">
+  <h2 className="text-3xl font-bold text-center mb-12 theme-text">
           Our Results
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {metrics.map((metric, index) => <div key={index} className="bg-[#F6F8FB] p-6 rounded-lg text-center">
+          {metrics.map((metric, index) => <div key={index} className="theme-bg p-6 rounded-lg text-center">
               <div className="flex justify-center mb-4">{metric.icon}</div>
-              <div className="text-3xl font-bold text-[#0F1C2E] mb-2">
+              <div className="text-3xl font-bold theme-text mb-2">
                 {metric.value}
               </div>
-              <div className="text-[#5B6472]">{metric.label}</div>
+              <div className="theme-muted">{metric.label}</div>
             </div>)}
         </div>
-        <h3 className="text-2xl font-bold text-center mb-8 text-[#0F1C2E]">
+  <h3 className="text-2xl font-bold text-center mb-8 theme-text">
           What Our Clients Say
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {testimonials.map((testimonial, index) => <div key={index} className="bg-[#F6F8FB] p-6 rounded-lg">
+          {testimonials.map((testimonial, index) => <div key={index} className="theme-bg p-6 rounded-lg">
               <div className="flex mb-4">
                 {[...Array(testimonial.stars)].map((_, i) => <Star key={i} size={20} className="text-yellow-400 fill-yellow-400 mr-1" />)}
               </div>
-              <p className="text-[#5B6472] mb-4 italic">"{testimonial.text}"</p>
-              <div className="font-bold text-[#0F1C2E]">
+              <p className="theme-muted mb-4 italic">"{testimonial.text}"</p>
+              <div className="font-bold theme-text">
                 {testimonial.initials}
               </div>
-              <div className="text-sm text-[#5B6472]">
+              <div className="text-sm theme-muted">
                 {testimonial.company}
               </div>
             </div>)}

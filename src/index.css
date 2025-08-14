@@ -3,3 +3,33 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 /* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
+
+/* Theme variables: change these to recolor the entire site */
+:root {
+	--color-bg: #F6F8FB; /* page background */
+	--color-text: #0F1C2E; /* primary text */
+	--color-primary: #00A389; /* brand / buttons */
+	--color-primary-hover: #008E78; /* brand hover */
+	--color-surface: #FFFFFF; /* cards */
+	--color-surface-dark: #1A2B43; /* dark surface */
+	--color-muted: #5B6472; /* secondary text */
+	--color-muted-2: #A0A8B3; /* tertiary text */
+	--color-accent-bg: #E0F7F4; /* small badges */
+	--color-border: #E0E5EB; /* subtle borders */
+	--color-dark: #0F1C2E; /* reused dark */
+}
+
+/* Helper semantic classes (used in components via Tailwind's arbitrary value syntax) */
+.theme-bg { background-color: var(--color-bg); }
+.theme-text { color: var(--color-text); }
+.theme-primary { background-color: var(--color-primary); }
+.theme-primary-text { color: var(--color-primary); }
+.theme-primary-hover { background-color: var(--color-primary-hover); }
+.theme-surface { background-color: var(--color-surface); }
+.theme-surface-dark { background-color: var(--color-surface-dark); }
+.theme-muted { color: var(--color-muted); }
+.theme-muted-2 { color: var(--color-muted-2); }
+.theme-accent-bg { background-color: var(--color-accent-bg); }
+.theme-border { border-color: var(--color-border); }
+
+.theme-border-bg { background-color: var(--color-border); }

@@ -21,19 +21,19 @@ export const FAQ = () => {
     question: 'Do you help with prevention after removal?',
     answer: 'Absolutely. We provide guidance on preventive measures to help protect your reputation going forward, including documentation practices and communication protocols.'
   }];
-  return <section id="faq" className="py-16 bg-[#F6F8FB]">
+  return <section id="faq" className="py-16 theme-bg">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#0F1C2E]">
+  <h2 className="text-3xl font-bold text-center mb-12 theme-text">
           Frequently Asked Questions
         </h2>
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => <div key={index} className="mb-4 last:mb-0">
               <button className="flex items-center justify-between w-full p-5 bg-white rounded-lg text-left focus:outline-none" onClick={() => toggleAccordion(index)}>
-                <span className="font-bold text-[#0F1C2E]">{faq.question}</span>
-                {openIndex === index ? <ChevronUp size={20} className="text-[#00A389]" /> : <ChevronDown size={20} className="text-[#5B6472]" />}
+                <span className="font-bold theme-text">{faq.question}</span>
+                {openIndex === index ? <ChevronUp size={20} className="theme-primary-text" /> : <ChevronDown size={20} className="theme-muted" />}
               </button>
               {openIndex === index && <div className="p-5 bg-white rounded-b-lg border-t border-gray-200">
-                  <p className="text-[#5B6472]">{faq.answer}</p>
+                  <p className="theme-muted">{faq.answer}</p>
                 </div>}
             </div>)}
         </div>

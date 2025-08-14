@@ -20,22 +20,22 @@ export const HowItWorks = () => {
   }];
   return <section id="how-it-works" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#0F1C2E]">
+  <h2 className="text-3xl font-bold text-center mb-12 theme-text">
           How It Works
         </h2>
         <div className="relative">
           {/* Vertical line for desktop */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#E0E5EB] -ml-0.5"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 theme-border-bg -ml-0.5"></div>
           {steps.map((step, index) => <div key={index} className="mb-12 last:mb-0">
               <div className="flex flex-col md:flex-row items-center">
                 <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 md:order-2'}`}>
-                  <h3 className="font-bold text-xl mb-3 text-[#0F1C2E]">
+                  <h3 className="font-bold text-xl mb-3 theme-text">
                     {step.title}
                   </h3>
-                  <p className="text-[#5B6472]">{step.description}</p>
+                  <p className="theme-muted">{step.description}</p>
                 </div>
                 <div className="flex justify-center my-4 md:my-0 md:w-0">
-                  <div className="bg-[#00A389] rounded-full p-3 z-10">
+                  <div className="theme-primary rounded-full p-3 z-10">
                     {step.icon}
                   </div>
                 </div>

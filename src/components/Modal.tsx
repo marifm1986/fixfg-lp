@@ -83,42 +83,42 @@ export const Modal: React.FC<ModalProps> = ({
   return <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div ref={modalRef} className="bg-white rounded-lg shadow-lg w-full max-w-md max-h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center p-5 border-b">
-          <h3 className="text-xl font-bold text-[#0F1C2E]">
+          <h3 className="text-xl font-bold theme-text">
             Book a Free Consultation
           </h3>
-          <button onClick={onClose} className="text-[#5B6472] hover:text-[#0F1C2E]">
+          <button onClick={onClose} className="theme-muted hover:theme-text">
             <X size={24} />
           </button>
         </div>
         <form onSubmit={handleSubmit} className="p-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div>
-              <label htmlFor="firstName" className="block mb-1 text-[#5B6472]">
+              <label htmlFor="firstName" className="block mb-1 theme-muted">
                 First Name *
               </label>
               <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-md" required />
             </div>
             <div>
-              <label htmlFor="lastName" className="block mb-1 text-[#5B6472]">
+              <label htmlFor="lastName" className="block mb-1 theme-muted">
                 Last Name *
               </label>
               <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-md" required />
             </div>
           </div>
           <div className="mb-4">
-            <label htmlFor="phone" className="block mb-1 text-[#5B6472]">
+            <label htmlFor="phone" className="block mb-1 theme-muted">
               Phone
             </label>
             <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-md" />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block mb-1 text-[#5B6472]">
+            <label htmlFor="email" className="block mb-1 theme-muted">
               Email *
             </label>
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-md" required />
           </div>
           <div className="mb-4">
-            <label htmlFor="platform" className="block mb-1 text-[#5B6472]">
+            <label htmlFor="platform" className="block mb-1 theme-muted">
               Platform *
             </label>
             <select id="platform" name="platform" value={formData.platform} onChange={handleChange} className="w-full p-3 border border-gray-300 rounded-md" required>
@@ -130,12 +130,12 @@ export const Modal: React.FC<ModalProps> = ({
             </select>
           </div>
           <div className="mb-6">
-            <label htmlFor="whatHappened" className="block mb-1 text-[#5B6472]">
+            <label htmlFor="whatHappened" className="block mb-1 theme-muted">
               What happened? (optional)
             </label>
             <textarea id="whatHappened" name="whatHappened" value={formData.whatHappened} onChange={handleChange} rows={4} className="w-full p-3 border border-gray-300 rounded-md"></textarea>
           </div>
-          <button type="submit" className="w-full bg-[#00A389] text-white py-3 rounded-md hover:bg-[#008E78] transition">
+          <button type="submit" className="w-full theme-primary text-white py-3 rounded-md hover:theme-primary-hover transition">
             Submit
           </button>
         </form>

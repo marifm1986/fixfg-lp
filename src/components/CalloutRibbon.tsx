@@ -5,7 +5,7 @@ interface CalloutRibbonProps {
 export const CalloutRibbon: React.FC<CalloutRibbonProps> = ({
   openModal
 }) => {
-  return <section className="py-12 bg-[#00A389] text-white">
+  return <section className="py-12 theme-primary text-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="mb-6 md:mb-0 text-center md:text-left">
@@ -17,7 +17,7 @@ export const CalloutRibbon: React.FC<CalloutRibbonProps> = ({
               issues.
             </p>
           </div>
-          <button onClick={openModal} className="bg-white text-[#00A389] px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition">
+          <button onClick={openModal} className="bg-white theme-primary-text px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition">
             Check Your Chances
           </button>
         </div>
