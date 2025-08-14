@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center justify-between">
           {/* Logo */}
             <div className="text-xl font-bold theme-text">
-            <img src="/logo.png" alt="FixFreightGuard Logo" className="h-24 w-auto" />
+            <img src="/logo.webp" alt="FixFreightGuard Logo" className="h-24 w-auto" />
             </div>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
