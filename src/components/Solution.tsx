@@ -11,7 +11,7 @@ export const Solution: React.FC<SolutionProps> = ({
       <h2 className="text-3xl font-bold text-center mb-4">
         No panic. There's a plan.
       </h2>
-      <p className="text-center theme-muted-2 mb-12 max-w-2xl mx-auto">
+      <p className="text-center  mb-12 max-w-2xl mx-auto">
         Our proven approach has helped carriers nationwide resolve negative
         reports and restore their reputation.
       </p>
@@ -23,7 +23,7 @@ export const Solution: React.FC<SolutionProps> = ({
             </div>
           </div>
           <h3 className="font-bold text-xl mb-3 text-center">Assess</h3>
-          <p className="text-center theme-muted-2">
+          <p className="text-center ">
             We review your report, gather the facts, and analyze your MC
             profile to understand the full picture.
           </p>
@@ -35,7 +35,7 @@ export const Solution: React.FC<SolutionProps> = ({
             </div>
           </div>
           <h3 className="font-bold text-xl mb-3 text-center">Act</h3>
-          <p className="text-center theme-muted-2">
+          <p className="text-center ">
             We craft the right response strategy and manage broker outreach to
             address the issues effectively.
           </p>
@@ -47,7 +47,7 @@ export const Solution: React.FC<SolutionProps> = ({
             </div>
           </div>
           <h3 className="font-bold text-xl mb-3 text-center">Resolve</h3>
-          <p className="text-center theme-muted-2">
+          <p className="text-center ">
             Target removal or clarification of the report, followed by
             comprehensive reputation clean-up.
           </p>
