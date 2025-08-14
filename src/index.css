@@ -6,17 +6,18 @@
 
 /* Theme variables: change these to recolor the entire site */
 :root {
-	--color-bg: #F6F8FB; /* page background */
-	--color-text: #0F1C2E; /* primary text */
-	--color-primary: #00A389; /* brand / buttons */
-	--color-primary-hover: #008E78; /* brand hover */
+	/* High-contrast theme colors (WCAG-friendly) */
+	--color-bg: #FFFFFF; /* page background (white) */
+	--color-text: #071422; /* primary text (very dark navy) */
+	--color-primary: #005B4F; /* brand / buttons (darker teal for contrast against white) */
+	--color-primary-hover: #00443a; /* brand hover */
 	--color-surface: #FFFFFF; /* cards */
-	--color-surface-dark: #1A2B43; /* dark surface */
-	--color-muted: #5B6472; /* secondary text */
-	--color-muted-2: #A0A8B3; /* tertiary text */
-	--color-accent-bg: #E0F7F4; /* small badges */
-	--color-border: #E0E5EB; /* subtle borders */
-	--color-dark: #0F1C2E; /* reused dark */
+	--color-surface-dark: #072233; /* dark surface (for sections with white text) */
+	--color-muted: #394651; /* secondary text (darker gray-blue) */
+	--color-muted-2: #6B7580; /* tertiary text */
+	--color-accent-bg: #E6FFFB; /* small badges */
+	--color-border: #E6EEF2; /* subtle borders */
+	--color-dark: #071422; /* reused dark */
 }
 
 /* Helper semantic classes (used in components via Tailwind's arbitrary value syntax) */
