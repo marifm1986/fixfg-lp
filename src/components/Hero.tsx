@@ -55,8 +55,8 @@ export const Hero: React.FC<HeroProps> = ({
             </a>
           </div>
         </div>
-        <div className="md:w-1/2 md:pl-12">
-          <div className="theme-bg p-6 rounded-lg">
+        <div className="md:w-1/2 md:pl-12 flex gap-4 max-md:flex-col max-md:items-center ">
+          <div className="p-6 rounded-2xl bg-slate-50 shadow-xl ">
             <h3 className="font-bold text-lg mb-4">
               We're Trusted By Carriers Nationwide
             </h3>
@@ -77,6 +77,7 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
             </div>
           </div>
+          <img src="/logo.webp" alt="Logo" className='w-1/2 min-md:w-full' />
         </div>
       </div>
     </div>

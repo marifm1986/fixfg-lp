@@ -33,20 +33,20 @@ export function App() {
     setIsModalOpen(false);
   };
   return <div className="flex flex-col min-h-screen theme-bg theme-text">
-      <Header openModal={openModal} />
-      <main className="flex-grow">
-        <Hero openModal={openModal} />
-        <Problem openModal={openModal} />
-        <Solution openModal={openModal} />
-        <HowItWorks />
-        <Platforms />
-        <Results />
-        <CalloutRibbon openModal={openModal} />
-        <FAQ />
-      </main>
-      <Footer />
+    {/* <Header openModal={openModal} /> */}
+    <main className="flex-grow">
+      <Hero openModal={openModal} />
+      <Problem openModal={openModal} />
+      <Solution openModal={openModal} />
+      <HowItWorks />
+      <Platforms />
+      <Results />
+      <CalloutRibbon openModal={openModal} />
+      <FAQ />
       <FloatingButton />
-      <Modal isOpen={isModalOpen} onClose={closeModal} formData={formData} setFormData={setFormData} />
-      <Toaster position="top-center" />
-    </div>;
+    </main>
+    {/* <Footer /> */}
+    <Modal isOpen={isModalOpen} onClose={closeModal} formData={formData} setFormData={setFormData} />
+    <Toaster position="top-center" />
+  </div>;
 }
